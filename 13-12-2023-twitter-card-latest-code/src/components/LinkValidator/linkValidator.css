@@ -1,0 +1,184 @@
+.secondSection {
+  margin-top: 100px;
+}
+
+.inputDiv {
+ max-width: 650px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.inputDiv input {
+  width: 70%;
+  border-radius: 5px;
+  border: 2px solid #a0a0a0;
+  padding: 0px 15px;
+  color: #707070;
+}
+
+.inputDiv input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #1f90f9;
+}
+
+.buttonDiv {
+  /* width: 30%; */
+  display: flex;
+  gap: 5px;
+}
+
+.buttonDiv button {
+  padding: 5px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.checkButton {
+  background-color: #1f90f9;
+  border: 2px solid #1f90f9;
+  color: white;
+}
+.checkButton:hover {
+  background-color: #125491;
+  transition: 0.3s;
+}
+
+.clearButton {
+  border: 2px solid #575757;
+}
+.clearButton:hover {
+  background-color: #cfcfcf;
+  transition: 0.3s;
+}
+
+.twitterCard {
+  max-width: 500px;
+  margin: auto;
+  /* border: 1px solid #888888; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.avatarCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.avatarCard .userName {
+  font-weight: 600;
+}
+
+/* Link Card  */
+.linkCard {
+  margin: auto;
+}
+
+.linkCard > img {
+  width: 100%;
+  margin-bottom: -10px;
+  margin-top: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.linkContent {
+  padding: 10px;
+  border: 1px solid #afafaf;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.linkContent h4 {
+  font-weight: 600;
+}
+.linkContent p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #707070;
+}
+.date {
+  font-size: 14px;
+  color: #707070;
+  margin-top: 10px;
+}
+
+
+/* bottom Section */
+.bottomSection{
+  margin-top: 30px;
+  padding:6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconSection{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.iconSection svg{
+  width: 20px;
+}
+
+.iconSection.comment:hover{
+  transition: 0.3s;
+  color: #1875cc;
+}
+.iconSection.repost:hover{
+  transition: 0.3s;
+  color: rgb(0, 156, 0);
+}
+.iconSection.like:hover{
+  transition: 0.3s;
+  color: #f91f68;
+}
+.iconSection.view:hover, .iconSection.share:hover{
+  transition: 0.3s;
+  color: #1875cc;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 568px) {
+
+  .inputDiv {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .inputDiv input {
+    width: 90%;
+    height: 30px;
+  }
+  
+  
+  .buttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .buttonDiv button {
+    font-size: 14px;
+  }
+}
